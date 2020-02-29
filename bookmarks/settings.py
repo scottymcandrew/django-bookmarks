@@ -121,8 +121,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# URL to serve the media files uploaded by users
+MEDIA_URL = '/media/'
+# local path where they reside
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 # URL to redirect after a successful login if no next parameter is present in the request
 LOGIN_REDIRECT_URL = 'dashboard'
 # URL to redirect the user to log in (for example, views using the login_required decorator
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
+
+# This prints to the console vs sending an email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

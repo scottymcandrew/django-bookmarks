@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     'mysite.com',
     'localhost',
     '127.0.0.1',
+    'sdm-django-bookmarks.herokuapp.com'
 ]
 
 # Application definition
